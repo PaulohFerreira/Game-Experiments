@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Título -->
+		<title>Running With Guns</title>
+
+		<!-- Informações para o Phaser -->
+		<meta name="viewport" content = "width = device-width, initial-scale = 1.0">
+    	<meta name="mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+
+    	<!-- Declaração dos scripts necessários -->
+    	<script type="text/javascript" src="eureca.js"></script>
+        <script type="text/javascript" src="js/phaser.min.js"></script>
+    	<script type="text/javascript" src="js/cube.js"></script>
+
+    	<!-- Referência para o css -->
+    	<link rel="stylesheet" type="text/css" href="css/theme.css">
+	</head>
+	
+	<body background="assets/page/bgimage.jpg">
+		<!-- Parte de seleção -->
+		<div class="divCharCreation" id="divCharCreation">
+			<label>Choose a name: </label>
+			<input type="text" id="nameChar" maxlength="20" />
+			
+			<br><label>Choose a weapon: </label>
+			
+			<select id="weaponChar">
+				<option value="machineGun">Machine Gun</option>
+				<option value="knife">Knives</option>
+				<option value="rocketLauncher">Rocket Launcher</option>
+			</select>
+			
+			<br><label>Choose a style: </label>
+			
+			<select id ="styleChar">
+				<option value="naked">Naked</option>
+				<option value="bob_pants">Bob Pants</option>
+				<option value="astronaut_jumpsuit">Astronaut Jumpsuit</option>
+			</select>
+			
+			<br><input type="button" value="Go!" onclick="initGame();" />
+		</div>
+
+		<!-- Div com informações -->
+		<div class="info" id="info">
+			<label><b>OBJECTIVE:</b> Be the first to achieve 15 deaths.</label>
+			<br><label><b>CONTROLS:</b> Arrows to move, Z to jump, X to shoot.</label>
+
+		</div>
+	</body>
+</html>

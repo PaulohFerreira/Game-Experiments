@@ -1,0 +1,45 @@
+﻿/* Styleshhet da página */
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.divCharCreation{
+	font-family: "Courier New";
+	width: 350px;
+    height: 80px;
+    padding: 10px;
+    border: 10px solid gray;
+    margin: 10px;
+  	text-align: center;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -175px;
+
+    -webkit-border-radius: 0 30px 30px;
+	border-radius: 0 30px 30px;
+
+	background-color: #b0c4de;
+}
+
+.info{
+    font-family: "Courier New";
+    width: 400px;
+    height: 80px;
+    padding: 10px;
+    border: 10px solid gray;
+    margin: 10px;
+    text-align: center;
+
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -200px;
+
+    background-color: #b0c4de;
+}

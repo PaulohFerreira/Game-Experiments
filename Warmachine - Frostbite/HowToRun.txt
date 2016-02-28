@@ -1,0 +1,9 @@
+Para fazerem o download da biblioteca GLUT para windows basta acessar o link https://www.opengl.org/resources/libraries/glut/glut_downloads.php .
+    O arquivo glut.h deve ser colocado no diretório include/GL do CodeBlocks.
+    O arquivo glut.lib deve ser colocado no diretório lib do CodeBlocks.
+    O arquivo glut32.dll deve ser colocado no diretório system (ou system32) do windows (veja onde fica as dlls de vocês no windows).
+    No programa você deverá colocar #include <windows.h> antes do #include <gl/glut.h>.
+    Você deverá também ir na opção: Project-> Build Options->Linker Settings e em Link Libraries adicionar o caminho da sua glut.lib, e em Other linker options, incluir:
+-lopengl32
+-lglu32
+-lglut32

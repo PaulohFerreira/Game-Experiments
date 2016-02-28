@@ -830,18 +830,6 @@ int berserkMode = 0; // Guarda se o jogador está em modo Berserk
     // FUNÇÕES DE ATUALIZAÇÃO :: OFF
 
     // FUNÇÕES DE APRESENTAÇÃO :: ON
-    void loadingScreen(){ // Barra de loading
-    long int i;
-    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t    Loading...\n");
-    printf("\t\t        [");
-    for(i=0; i<1500000000; i++){
-        if (i%100000000 == 0) printf("|");
-        else printf("");
-    }
-    printf("]\n");
-    printf("\n\n\n\n\t\t      Please press any key.");
-    getchar();
-}
     void introGame(){ // Tela estilo "Press Start"
         printf("    #==========================================================#\n");
         printf("  |S|              #=*=*=*=*=*=*=*=*=*=*=*=*=*#                |S|\n");
@@ -1116,7 +1104,6 @@ main(){
     createPlayer(&player); // Cria o jogador
     firstScreen(&player); // Mostra ao jogador a tela de início
 
-    loadingScreen(); // Loading. Esse loading eh necessário para gerar uma boa seed para o 1º mapa
     createMap(); // Cria o mapa
     createEnemies(); // Cria os inimigos
 
